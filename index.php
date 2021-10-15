@@ -74,6 +74,36 @@
                 echo "I knew it ".$fun." ".$fun2."<br>";
             ?>
         </div>
+        <div class="jumbotron mt-3">
+            <?php
+                $text1="Hello PHP!";
+                $text2='Hello PHP!';
+                $num=4;
+                $num2=32.65;
+                $boo=true;
+                $boo2=false;
+                $languages=array("HTML","CSS","JavaScript","PHP","NodeJS", "React", 100);
+                echo $text1."<br>".$text2;
+                echo var_dump($text1);  // var_dump tells us the type
+                echo var_dump($num);    // var_dump tells us the type
+                echo var_dump($num2);    // var_dump tells us the type
+                echo var_dump($boo);    // var_dump tells us the type
+                echo var_dump($languages);    // var_dump tells us the type
+                echo var_dump($languages[3]);    // var_dump tells us the type
+                echo $languages[3];
+            ?>
+        </div>
+        <div class="jumbotron mt-1">
+            <?php
+                class Car {
+                    function Car(){
+                        $this->model="Broncos";
+                    }
+                }
+            $pickCar= new Car();
+            echo $pickCar->model;
+            ?>
+        </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
