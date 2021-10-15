@@ -95,7 +95,7 @@
         </div>
         <div class="jumbotron mt-1">
             <?php
-                class Car {
+                class Car { // Class calls
                     function Car(){
                         $this->model="Broncos";
                     }
@@ -103,6 +103,56 @@
             $pickCar= new Car();
             echo $pickCar->model;
             ?>
+        </div>
+        <div class="container">
+            <div class="card mt-3 mb-3">
+                <div class="card-body">
+                    <?php 
+                    $texts=strlen("Hello PHP"); //String methods strlen = length
+                    echo $texts;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=str_word_count("Learning PHP day by day"); //String methods word counts = how many words!
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=strrev("TACOCAT"); //String methods REVERSE = reverse the sentence or words!
+                    echo $texts1;
+                    echo "<p>the problem is tacocat is the same tacocat :) </p>";
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=strpos("Looking forward to learn PHP!", "to"); //String methods stringpos gives with index number
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=str_replace("PHP", "TypeScript","Looking forward to learn PHP!"); //String methods replaces the given word with!
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=addcslashes("Looking forward to learn PHP!", "PHP"); //String methods adds slash between given letters!
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=addslashes('Looking forward to learn "PHP"!'); //String methods adds slash between given " "!
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=bin2hex('Looking forward to learn "PHP"!'); //String methods turns into hex system could be used for crypting!
+                    echo $texts1;
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=('Looking forward to learn PHP!');
+                    echo chop($texts1, "to learn PHP!"); // chops the rest of the sentences you picked
+                    echo "<br>";
+                    echo "<br>";
+                    $texts1=('Looking forward to learn PHP!');
+                    echo $texts1."<br>";    // turns into ASCII table elements!!
+                    echo chr(52)."<br>";    // Decimal
+                    echo chr(052)."<br>";   // Octal
+                    echo chr(0x52)."<br>";  // Hex = Hexadecimal
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
