@@ -18,7 +18,7 @@
             echo "Result in".$color;
             ?>
         </div>
-        <div class="container">
+        <div class="alert alert-secondary mt-5">
             <?php 
                 // Creating variable
             $_txt="PHP";
@@ -29,7 +29,7 @@
             echo $x;
             ?>
         </div>
-        <div class="alert alert-primary mt-5">
+        <div class="alert alert-danger mt-5">
             <?php 
             $z=8; // Global Variable, it doesn't work in the function(can't call)
             function Test() {
@@ -40,7 +40,7 @@
             echo "<p>Catching the X variable without the function:$z</p>";
             ?>
         </div>
-        <div class="alert alert-primary mt-5">
+        <div class="alert alert-warning mt-5">
             <?php 
             $s=10;
             $t=20;
@@ -51,7 +51,7 @@
             echo $s;
             ?>
         </div>
-        <div class="alert alert-primary mt-5">
+        <div class="alert alert-info mt-5">
             <?php 
             function StaticCallTest() {
                 static $f=45; // Holds the variable in the storage/mind
@@ -63,6 +63,15 @@
             StaticCallTest(); // Running the function
             echo "<br>";
             StaticCallTest(); // Running the function
+            ?>
+        </div>
+        <div class="alert alert-success mt-5">
+            <?php 
+                print "<h2>Php is Fun!</h2>";
+                print "I'm learning PHP<br>";
+                $fun="Learn to PHP";
+                $fun2="is so fun!";
+                echo "I knew it ".$fun." ".$fun2."<br>";
             ?>
         </div>
     </div>
