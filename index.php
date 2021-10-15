@@ -154,6 +154,39 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="card mt-3 mb-3">
+                <div class="card-body">
+                    <?php 
+                        $texts1=('Looking forward to learn PHP!');  // urlencode or undecode the given word or sentences
+                        $encString=convert_uuencode($texts1);
+                        echo $encString."<br>";
+                        $decString=convert_uudecode($encString);
+                        echo $decString."<br>";
+                        $color="red";
+                        $text='Looking forward to learn PHP!';
+                        echo crc32($text)."<br>";
+                        echo "<br>";
+                        $texts1=('Looking forward to learn PHP!');  // how to use explode method for example it can be used for DATE
+                        print_r(explode(" ", $texts1));
+                    ?>
+                    <p> Rose's are <?=$color?>.</p> <!-- we can print without the echo -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card mt-3 mb-3">
+                <div class="card-body">
+                    <?php 
+                        $country="USA";  //Creates the text document and prints the given info in it!
+                        $number=50;
+                        $file=fopen("test.txt","w");
+                        echo fprintf($file, "In the %s flag there are %u stars.", $country, $number);
+                    ?>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
